@@ -62,13 +62,9 @@ public class MemoryCache: DACacheProvider {
     
     public func save(key: String, value: NSData?) {
         if let new = value {
-            DispatchQueue.main.async {
-                self.cache.setObject(new, forKey: NSString(string: key))
-            }
+            self.cache.setObject(new, forKey: NSString(string: key))
         } else {
-            DispatchQueue.main.async {
-                self.cache.removeObject(forKey: NSString(string: key))
-            }
+            self.cache.removeObject(forKey: NSString(string: key))
         }
     }
     
