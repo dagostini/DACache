@@ -10,6 +10,7 @@ DACache is a simple cache manager that simplifies caching of data to the file sy
 
 This simple cache manager will allow you to cache files in memory and on the file system at the same time. You use it as a dictionary, if you have files cached in memory it will use them, otherwise, it will try and fetch them from the disk. Using file caching is optional.
 
+You can read more about this library on my blog: http://agostini.tech/2017/06/05/two-tier-caching-with-nscache/
 
 ## Usage
 
@@ -26,7 +27,7 @@ DACache is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "DACache"
+pod 'DACache'
 ```
 
 ## Author
